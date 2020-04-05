@@ -1,4 +1,97 @@
 *
 {
   font-family: fantasy;
+  margin: 0;
+}
+
+body, html
+{
+  height: 100%;
+}
+
+.header
+{
+  text-align: center;
+  font-size: 1.5vw;
+  background: gray;
+}
+
+.content
+{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 100%;
+}
+
+.outerContent
+{
+  width: 12.5%;
+  float: left;
+  box-shadow: inset 0px 0px 0px 0.2vw cyan;
+}
+
+.innerContent
+{
+  width: 75%;
+  background: teal;
+  box-shadow: inset 0px 0px 0px 0.2vw yellow;
+}
+
+.inputContainer
+{
+  height: 35%;
+  text-align: left;
+  margin: 2vw;
+  padding: 1vw;
+  box-shadow: inset 0px 0px 0px 0.2vw yellow;
+}
+
+.userInput
+{
+  height: 15vw;
+  border: solid black 1vw;
+  resize: none;
+  width: 90%;
+  background-color: white;;
+  color: red;
+}
+
+.userInput:focus
+{
+  background-color: cyan;
+}
+
+.inputButton
+{
+  height: 4vw;
+  width: 10vw;
+  font-size: 2vw;
+  text-align: center;
+  padding: 0;
+  margin: 0 5vw 0 5vw;
+}
+
+.outputContainer
+{
+  text-align: left;
+  box-shadow: inset 0px 0px 0px 0.2vw yellow;
+  height: 12vw;
+  background-color: white;
+  margin: 2vw;
+  padding: 1vw;
+}
+
+.output
+{
+  box-shadow: inset 0px 0px 0px 0.2vw yellow;
+  height:10vw;
+  overflow-y: scroll;
+  color: red;
+}
+
+.footer
+{
+  font-size: 1.5vw;
+  background: gray;
 }

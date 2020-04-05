@@ -5,11 +5,41 @@
     <meta name="author" content="Mrmi">
     <meta name="keywords" content="Caesar Cipher, Caesar, Cipher, encrypt, decrypt">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
   <body>
-    <h1>CAESAR CIPHER</h1>
-    <h2> gej</h2>
+    <div class="header">
+      <h1>Encrypt and decrypt text using the Caesar cipher</h1>
+    </div>
+
+    <div class="content">
+      <div class="outerContent">
+      </div>
+      <div class="innerContent">
+        <div class="inputContainer">
+          <h2>Input your text</h2>
+          <form>
+            <textarea class="userInput"></textarea>
+          </form>
+        </div>
+        <button class="inputButton" onclick="encrypt()" id="encryptButton">ENCRYPT</button>
+        <button class="inputButton" onclick="decrypt()" id="encryptButton">DECRYPT</button>
+        <div class="outputContainer">
+          <h2>Output: </h2>
+          <div class="output">
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="outerContent">
+      </div>
+    </div>
+
+    <div class="footer">
+      <p> Created by Mrmi </p>
+      <p> Started 4.4.2020. <p>
+    </div>
   </body>
 </html>
