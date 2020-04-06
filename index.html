@@ -30,7 +30,7 @@
 
         <button class="inputButton" onclick="useCipher(true)">ENCRYPT</button>
         <button class="inputButton" onclick="useCipher(false)">DECRYPT</button>
-        <input type="number" class="stepInput" id="step"></input>
+        <input type="number" class="stepInput" id="step" min="0" oninput="validity.valid||(value='')"></input>
         <div class="outputContainer">
           <h2>Output: </h2>
           <div class="output">

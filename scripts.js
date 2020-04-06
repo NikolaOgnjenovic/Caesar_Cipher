@@ -7,6 +7,7 @@ function useCipher(shouldEncrypt)
   var inputLength=input.length;
   var message = "";
   var step = parseInt(document.getElementById("step").value);
+  step%=26;
   var indexOfCurrent;
   for(var i=0; i<inputLength; ++i)
   {
@@ -29,8 +30,8 @@ function useCipher(shouldEncrypt)
         //If the input is getting decrypted go step characters back through the alphabet
         if(indexOfCurrent-step<0)
         {
-          //If we drop below the index 0, just get the alphabet's character at index 26-step
-          shifted = alphabet[26-step];
+          //If we drop below the index 0, just get the alphabet's character at index 26-(step-indexOfCurrent)
+          shifted = alphabet[26-(step-indexOfCurrent)];
         }
         else
         {
