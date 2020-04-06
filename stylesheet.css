@@ -1,19 +1,20 @@
 *
 {
-  font-family: fantasy;
+  font-family: Garamond;
   margin: 0;
 }
 
 body, html
 {
   height: 100%;
+  background: #edecdf;
 }
 
 .header
 {
   text-align: center;
   font-size: 1.5vw;
-  background: gray;
+  background-color: #f5f2ce;
 }
 
 .content
@@ -28,36 +29,37 @@ body, html
 {
   width: 12.5%;
   float: left;
-  box-shadow: inset 0px 0px 0px 0.2vw cyan;
+  /*box-shadow: inset 0px 0px 0px 0.2vw cyan;*/
 }
 
 .innerContent
 {
   width: 75%;
-  background: teal;
-  box-shadow: inset 0px 0px 0px 0.2vw yellow;
+  background-color: #b59b6e;
+  box-shadow: inset 0px 0px 0px 0.2vw #fff794;
 }
 
-.inputContainer
+.IOCOntainer
 {
-  height: 35%;
   text-align: left;
+  box-shadow: inset 0px 0px 0px 0.2vw #fff794;
+  height: 30%;
+  background-color: #f5f2ce;
   margin: 2vw;
   padding: 1vw;
-  box-shadow: inset 0px 0px 0px 0.2vw yellow;
 }
 
-.userInput
+.IOArea
 {
-  height: 15vw;
-  border: solid black 1vw;
+  height: 75%;
+  color: red;
+  border: solid 0.4vw #b59b6e;
   resize: none;
   width: 90%;
-  background-color: white;;
+  background-color: #f5f2ce;
   color: red;
 }
-
-.userInput:focus
+.IOArea:hover
 {
   background-color: cyan;
 }
@@ -71,27 +73,13 @@ body, html
   padding: 0;
   margin: 0 5vw 0 5vw;
 }
-
-.outputContainer
+.inputButton:hover
 {
-  text-align: left;
-  box-shadow: inset 0px 0px 0px 0.2vw yellow;
-  height: 12vw;
-  background-color: white;
-  margin: 2vw;
-  padding: 1vw;
-}
-
-.output
-{
-  box-shadow: inset 0px 0px 0px 0.2vw yellow;
-  height:10vw;
-  overflow-y: scroll;
-  color: red;
+   background-color:
 }
 
 .footer
 {
   font-size: 1.5vw;
-  background: gray;
+  background-color: #f5f2ce;
 }

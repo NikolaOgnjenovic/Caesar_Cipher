@@ -21,22 +21,21 @@
       </div>
 
       <div class="innerContent">
-        <div class="inputContainer">
+
+        <div class="IOCOntainer">
           <h2>Input your text</h2>
-          <form>
-            <textarea class="userInput" id="inputArea"></textarea>
-          </form>
+            <textarea class="IOArea" id="inputArea"></textarea>
         </div>
 
         <button class="inputButton" onclick="useCipher(true)">ENCRYPT</button>
+          <label style="">STEP:</label>
+          <input  type="number" class="stepInput" placeholder="Positive integers only" id="step" min="0" default="0"oninput="validity.valid||(value='')" ></input>
+
         <button class="inputButton" onclick="useCipher(false)">DECRYPT</button>
-        <input type="number" class="stepInput" id="step" min="0" oninput="validity.valid||(value='')"></input>
-        <div class="outputContainer">
+
+        <div class="IOCOntainer">
           <h2>Output: </h2>
-          <div class="output">
-            <p id="outputArea">
-            </p>
-          </div>
+          <textarea readonly class="IOArea" id="outputArea"></textarea>
         </div>
 
       </div>

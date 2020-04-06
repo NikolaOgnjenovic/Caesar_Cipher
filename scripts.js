@@ -5,10 +5,19 @@ function useCipher(shouldEncrypt)
 {
   var input = document.getElementById("inputArea").value;
   var inputLength=input.length;
+
+  //If nothing is inputted or no step value is inputted output nothing and return
+  if(document.getElementById("inputArea").value==="" || document.getElementById("step").value==="")
+  {
+    outputParagraph.value = "";
+    return;
+  }
+
   var message = "";
   var step = parseInt(document.getElementById("step").value);
   step%=26;
   var indexOfCurrent;
+
   for(var i=0; i<inputLength; ++i)
   {
     //Conver current character to lower case and find its index in the alphabet
@@ -44,7 +53,6 @@ function useCipher(shouldEncrypt)
       once the character is shifted and set the shifted character to upper case if needed*/
       if(input[i]!==input[i].toLowerCase())
       {
-
         shifted=shifted.toUpperCase();
       }
 
@@ -58,5 +66,5 @@ function useCipher(shouldEncrypt)
     }
   }
   //Set the output paragraph's text to the message
-  outputParagraph.innerHTML = message;
+  outputParagraph.value = message;
 }
